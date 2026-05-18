@@ -7,52 +7,132 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="logo-hero">
+    <img src="Logo.png" alt="The Crumb Riot" class="logo-hero-img">
+  </div>
+
+  <header class="site-header">
+    <div class="site-header-brand">
+      <img src="crumby.png" alt="The Crumb Riot" class="site-logo">
+      <p class="site-tagline">Baked to misbehave</p>
+    </div>
+    <a href="https://instagram.com/thecrumbriot" class="instagram-button" target="_blank" rel="noopener" aria-label="@thecrumbriot on Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        <span>@thecrumbriot</span>
+      </a>
+  </header>
+
   <main>
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-image">
-        <img src="12ee4f12e0cb044355d737c589283a14.jpg" alt="Artisan pastries and baked goods">
-      </div>
-      <div class="hero-content">
-        <h1>The Crumb Riot</h1>
-      </div>
-    </section>
 
     <!-- Bio Section -->
     <section class="bio">
       <h2>Meet the Chef</h2>
-      <div class="bio-content">
-        <p>I'm a Colombian-born pastry chef with over 15 years in the kitchen, where my true passion lives. Every croissant, cake, and confection is crafted with the love and precision that turns simple ingredients—flour, sugar, butter—into something magical.</p>
+      <div class="bio-layout">
+        <div class="bio-pic">
+          <img src="elsa-bio-pic.jpg" alt="elsa-pastry-chef">
+        </div>
+        <div class="bio-content">
+          <p>The Crumb Riot is where fine dining precision meets a playful kind of chaos.
+          I'm a Colombian pastry chef trained in fine dining restaurants and luxury hotels with over 15 years of experience.
+          <p>From plated desserts to decadent cookies, my work blends experimental flavor combinations with Latin American influences that delight with surprise.</p>
+        </div>
       </div>
     </section>
 
     <!-- Cookie Pop-Up Section -->
     <section class="cookies">
-      <h2>Summer 2026 BK Cookie Pop-Up</h2>
-      <p class="cookies-intro"><a href="https://instagram.com/thecrumbriot" target="_blank" rel="noopener">Available for pre-order now</a></p>
+      <h2>Summer 2026</h2>
+      <h2>BK Cookie Pop-Up</h2>
+      <h3>Baked to impress! Limited edition</h3>
+      <a href="https://instagram.com/thecrumbriot" class="order-button" target="_blank" rel="noopener">
+        Available to order until May 31
+      </a>
+      
+      <div class="pricing">
+        <div class="pricing-card">
+          <h4>One Flavor</h4>
+          <div class="pricing-row">
+            <span>6 cookies</span>
+            <span class="price">$39</span>
+          </div>
+          <div class="pricing-row">
+            <span>12 cookies</span>
+            <span class="price">$76</span>
+          </div>
+        </div>
+        <div class="pricing-card">
+          <h4>Mixed Flavors</h4>
+          <div class="pricing-row">
+            <span>6 cookies</span>
+            <span class="price">$42</span>
+          </div>
+          <div class="pricing-row">
+            <span>12 cookies</span>
+            <span class="price">$80</span>
+          </div>
+        </div>
+      </div>
 
       <div class="cookie-grid">
         <div class="cookie-item">
           <div class="cookie-photo">
-            <img src="https://via.placeholder.com/400x400/667eea/ffffff?text=BK+Blackout" alt="BK Blackout Cookie">
+            <img src="bkblackout.jpg" alt="BK Blackout Cookie">
           </div>
           <h3>BK Blackout</h3>
+  	  <p>A rich dark chocolate cookie stuffed with silky chocolate ganache and finished with brownie crumble and flaky sea salt. Warm, gooey, and inspired by New York’s iconic blackout cake.</p>
+
         </div>
 
         <div class="cookie-item">
           <div class="cookie-photo">
-            <img src="https://via.placeholder.com/400x400/764ba2/ffffff?text=Matcha+Berry+Lava" alt="Matcha Berry Lava Cookie">
+            <img src="matcha-berry-lava.png" alt="Matcha Berry Lava Cookie">
           </div>
           <h3>Matcha Berry Lava</h3>
+	  <p>A vibrant matcha cookie with a molten raspberry center and hints of vanilla sweetness. Earthy, fruity, and perfectly balanced with a soft gooey bite.</p>
+        </div>
+
+
+        <div class="cookie-item">
+          <h3>Nana Pudding</h3>
+	  <p>A soft banana cookie filled with creamy vanilla pudding and crunchy wafer pieces. Inspired by classic Southern banana pudding with a cozy nostalgic twist.</p>
+        </div>
+
+        <div class="cookie-item">
+          <h3>Crunchy Caramel</h3>
+	  <p>A buttery cookie loaded with crunchy pretzels, milk chocolate, and a melted salted caramel center. Sweet, salty, crunchy, and seriously addictive.</p>
         </div>
       </div>
 
-      <div class="all-flavors">
-        <p><strong>All Flavors:</strong> BK Blackout • Matcha Berry Lava • Nana Pudding • Crunchy Caramel</p>
+      <div class="pricing">
+        <div class="pricing-card">
+          <h4>One Flavor</h4>
+          <div class="pricing-row">
+            <span>6 cookies</span>
+            <span class="price">$39</span>
+          </div>
+          <div class="pricing-row">
+            <span>12 cookies</span>
+            <span class="price">$76</span>
+          </div>
+        </div>
+        <div class="pricing-card">
+          <h4>Mixed Flavors</h4>
+          <div class="pricing-row">
+            <span>6 cookies</span>
+            <span class="price">$42</span>
+          </div>
+          <div class="pricing-row">
+            <span>12 cookies</span>
+            <span class="price">$80</span>
+          </div>
+        </div>
       </div>
 
       <a href="https://instagram.com/thecrumbriot" class="order-button" target="_blank" rel="noopener">
-        Order via Instagram
+        Order Now
       </a>
     </section>
 
@@ -70,5 +150,14 @@
   <footer>
     <p>&copy; 2026 The Crumb Riot. All rights reserved.</p>
   </footer>
+  <script>
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        document.querySelector('.site-header').classList.toggle('visible', !entry.isIntersecting);
+      },
+      { threshold: 0 }
+    );
+    observer.observe(document.querySelector('.logo-hero'));
+  </script>
 </body>
 </html>
