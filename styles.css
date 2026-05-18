@@ -388,49 +388,83 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .hero {
-    min-height: 60vh;
-  }
+  body { overflow-x: hidden; }
 
+  /* Header */
+  .site-header { padding: 0.5rem 1rem; }
+  .site-logo { height: 48px; }
+  .site-tagline { display: none; }
+  .site-header .instagram-button {
+    padding: 0.6rem;
+    border-radius: 50%;
+    gap: 0;
+  }
+  .site-header .instagram-button span { display: none; }
+  .site-header .instagram-button svg { width: 22px; height: 22px; }
+
+  /* Logo hero */
+  .logo-hero { padding: 2rem 1rem; }
+
+  /* Bio */
   .bio,
-  .social {
-    padding: 3rem 1.5rem;
-  }
+  .cookies,
+  .social { padding: 3rem 1.5rem; }
 
-  .bio-layout {
-    flex-direction: column;
-  }
+  .bio-layout { flex-direction: column; }
 
   .bio-pic {
     flex: 0 0 auto;
     width: 100%;
-    max-width: 320px;
+    max-width: 220px;
     margin: 0 auto;
   }
 
   .bio-content {
     font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Cookies */
+  .cookie-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+  }
+
+  .cookie-photo {
+    width: min(240px, 65vw);
+    height: min(240px, 65vw);
+  }
+
+  /* Pricing */
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 340px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero {
-    min-height: 50vh;
-  }
+  .site-logo { height: 40px; }
 
-  .hero-content {
-    padding: 1.5rem;
-  }
+  .logo-hero { padding: 1.5rem 1rem; }
 
   .bio,
-  .social {
-    padding: 2rem 1rem;
-  }
-}
+  .cookies,
+  .social { padding: 2rem 1rem; }
 
-/* Ensure responsive at all breakpoints from 320px to 1920px */
-@media (min-width: 320px) and (max-width: 1920px) {
-  body {
-    overflow-x: hidden;
+  .bio-layout { gap: 1.5rem; }
+
+  .cookie-photo {
+    width: min(200px, 60vw);
+    height: min(200px, 60vw);
+  }
+
+  .order-button {
+    width: 100%;
+    text-align: center;
   }
 }
